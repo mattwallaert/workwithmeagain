@@ -6,9 +6,8 @@
 body {
   width: 100%;
   height: 100%;
-  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  background-color: black;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  background-color: #415CEC;
 }
 html {
   width: 100%;
@@ -22,117 +21,190 @@ h5,
 h6 {
   margin: 0 0 35px;
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
 }
 p {
   margin: 0 0 25px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
+  color: #15141E;
+}
+p.bold {
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   p {
     margin: 0 0 35px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
   }
 }
+
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.logo-image {
+  background-image: url("../assests/wwma-logo@2x.png");
+  display: block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 501px;
+  width: 100%;
+  height: 272px;
+}
+.angel-list-icon {
+  background-image: url("../assests/angellist.png");
+  background-size: 32px 36px;
+  width: 32px;
+  height: 36px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-top: 20px;
+}
+.smiling-icon {
+  background-image: url("../assests/smile.png");
+  background-size: 35px 36px;
+  width: 35px;
+  height: 36px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-top: px;
+}
+.steps-wrapper {
+  background-color: #f4e5d7;
+  padding: 40px;
+  margin-top: -200px;
+}
+.step {
+  position: relative;
+  margin-bottom: 20px;
+  min-height: 60px;
+}
+.step:last-child {
+  margin-bottom: 0;
+}
+.step p { 
+  font-size: 14px;
+  padding-left: 170px;
+}
+.step .number {
+  position: absolute;
+  display: block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.step .number.one {
+  background-image: url("../assests/step-numbers/one.svg");
+  width: 41px;
+  height: 60px;
+}
+.step .number.two {
+  background-image: url("../assests/step-numbers/two.svg");
+  width: 50px;
+  height: 60px;
+  left: 20px;
+}
+.step .number.three {
+  background-image: url("../assests/step-numbers/three.svg");
+  width: 48px;
+  height: 60px;
+}
+.step .number.four {
+  background-image: url("../assests/step-numbers/four.svg");
+  width: 58px;
+  height: 60px;
+  left: 20px;
+}
+.step .number.five {
+  background-image: url("../assests/step-numbers/five.svg");
+  width: 47px;
+  height: 60px;
+}
+.step .number.six {
+  background-image: url("../assests/step-numbers/six.svg");
+  width: 52px;
+  height: 60px;
+  left: 20px;
+}
+.step .number.seven {
+  background-image: url("../assests/step-numbers/seven.svg");
+  width: 52px;
+  height: 60px;
+}
+.step .number.eight {
+  background-image: url("../assests/step-numbers/eight.svg");
+  width: 50px;
+  height: 60px;
+  left: 20px;
+}
+.step .number.nine {
+  background-image: url("../assests/step-numbers/nine.svg");
+  width: 52px;
+  height: 60px;
+}
+.step .number.ten {
+  background-image: url("../assests/step-numbers/ten.svg");
+  width: 93px;
+  height: 60px;
+  left: 20px;
+}
+.step .number.eleven {
+  background-image: url("../assests/step-numbers/eleven.svg");
+  width: 85px;
+  height: 60px;
+}
+.step .number.twelve {
+  background-image: url("../assests/step-numbers/twelve.svg");
+  width: 92px;
+  height: 60px;
+  left: 20px;
+}
+.step .arrow {
+  display: block;
+  position: absolute;
+  right: -95px;
+  top: 0;
+  background-image: url("../assests/chevron-right.png");
+  background-size: 22px 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 36px;
+  background-color: #f4e5d7;
+  padding: 30px 20px 30px 35px;
+}
+
+.step .announcement-icon {
+  display: block;
+  position: absolute;
+  right: -30px;
+  top: -18px;
+  background-image: url("../assests/announcement.png");
+  background-size: 36px 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 36px;
+  height: 36px;
+}
+
 a {
-  color: #3366ff;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  color: #3f5cea;
+  text-decoration: underline;
 }
 a:hover,
 a:focus {
-  text-decoration: none;
-  color: #3366ff;
+  color: #3f5cea;
+  cursor: pointer;
 }
-.light {
-  font-weight: 400;
-}
-.navbar-custom {
-  margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
-}
-.navbar-custom .navbar-toggle {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.2);
-  font-size: 12px;
-}
-.navbar-custom .navbar-toggle:focus,
-.navbar-custom .navbar-toggle:active {
-  outline: none;
-}
-.navbar-custom .navbar-brand {
-  font-weight: 700;
-}
-.navbar-custom .navbar-brand:focus {
-  outline: none;
-}
-.navbar-custom a {
-  color: white;
-}
-.navbar-custom .nav li a {
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-}
-.navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
-  outline: none;
-  background-color: transparent;
-}
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:active {
-  outline: none;
-  background-color: transparent;
-}
-.navbar-custom .nav li.active {
-  outline: none;
-}
-.navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.navbar-custom .nav li.active a:hover {
-  color: white;
-}
-@media (min-width: 768px) {
-  .navbar-custom {
-    padding: 20px 0;
-    border-bottom: none;
-    letter-spacing: 1px;
-    background: transparent;
-    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  }
-  .navbar-custom.top-nav-collapse {
-    padding: 0;
-    background: black;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
-}
-.intro {
-  display: table;
-  width: 100%;
-  height: auto;
-  padding: 100px 0;
-  text-align: center;
-  color: white;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
+
 .intro .intro-body {
-  display: table-cell;
-  vertical-align: middle;
+  padding: 60px 0;
 }
 .intro .intro-body .brand-heading {
   font-size: 40px;
@@ -150,70 +222,6 @@ a:focus {
   }
   .intro .intro-body .intro-text {
     font-size: 26px;
-  }
-}
-.btn-circle {
-  width: 70px;
-  height: 70px;
-  margin-top: 15px;
-  padding: 7px 16px;
-  border: 2px solid white;
-  border-radius: 100% !important;
-  font-size: 40px;
-  color: white;
-  background: transparent;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-}
-.btn-circle:hover,
-.btn-circle:focus {
-  outline: none;
-  color: white;
-  background: rgba(255, 255, 255, 0.1);
-}
-.btn-circle i.animated {
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-duration: 1s;
-  -moz-transition-property: -moz-transform;
-  -moz-transition-duration: 1s;
-}
-.btn-circle:hover i.animated {
-  -webkit-animation-name: pulse;
-  -moz-animation-name: pulse;
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-}
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@-moz-keyframes pulse {
-  0% {
-    -moz-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-  100% {
-    -moz-transform: scale(1);
-    transform: scale(1);
   }
 }
 .content-section {
@@ -311,6 +319,6 @@ body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 
-.ftc{
+.ftc {
   color:#3366ff;
 }
