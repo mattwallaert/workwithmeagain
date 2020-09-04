@@ -38,6 +38,9 @@ p {
     line-height: 1.6;
   }
 }
+.mt-30 {
+  margin-top: 30px;
+}
 .logo-image {
   background-image: url("../assests/wwma-logo@2x.png");
   display: block;
@@ -61,7 +64,7 @@ p {
 }
 
 a {
-  color: #031b90;
+  color: #F4E5D7;
   text-decoration: underline;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -70,7 +73,7 @@ a {
 a:hover,
 a:focus {
   cursor: pointer;
-  color: #031b90;
+  color: #F4E5D7;
 }
 .light {
   font-weight: 400;
